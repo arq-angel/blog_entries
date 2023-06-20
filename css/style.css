@@ -1,0 +1,94 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set full height for the body and make it a flex container */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header and navigation styles */
+  header {
+    background-color: #F8F1F1;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; /* Ensure the header is above other content */
+  }
+  
+  nav {
+    background-color: #025464;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #F8F1F1;
+  }
+  
+  /* Main content styles */
+  main {
+    flex: 1; /* Expand to fill remaining vertical space */
+    background-color: #F8F1F1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px; /* Adjust margin to account for the fixed header */
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #025464;
+    color: #F8F1F1;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0; /* Ensure the footer does not shrink */
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-entry {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #F8F1F1;
+    border-radius: 5px;
+}
+
+.blog-entry h2 {
+    color: #025464;
+}
+
+.blog-entry p {
+    color: #000;
+}
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    /* Mobile-specific styles */
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
