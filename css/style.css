@@ -28,9 +28,6 @@ body, h1, p {
     text-align: center;
   }
 
-  section {
-    text-align: left;
-  }
   
   nav ul {
     list-style-type: none;
@@ -76,8 +73,9 @@ body, h1, p {
 .blog-entry {
     margin-bottom: 30px;
     padding: 20px;
-    background-color: #F8F1F1;
+    background-color: #A2CDB0;
     border-radius: 5px;
+    text-align: left;
 }
 
 .blog-entry h2 {
